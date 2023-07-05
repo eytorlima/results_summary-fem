@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: #fff;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+div#main-block {
+    display: flex;
+    margin: auto auto;
+    width: 700px;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 18px #d0d0d0;
+}
+
+div#results {
+    background: linear-gradient(to top, #312ce8, #4734f0, #6743ff);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+}
+
+#your-result {
+    font-size: 1.5rem;
+    margin-top: 10%;
+    color: #bfb6ff;
+    font-weight: bold;
+    text-align: center;
+}
+
+div#circle {
+    margin-top: 10%;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: linear-gradient(to top, #4734f0, #4c23c6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#score-total {
+    font-size: 4.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+#score-max {
+    color: #bfb6ff;
+    font-weight: bold;
+    text-align: center;
+}
+
+#title-results {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#text {
+    color: #bfb6ff;
+    font-weight: bold;
+    text-align: center;
+    margin: 5% 18%;
+}
+
+div#summary {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#title-summary {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3d4159;
+    margin-top: 10%;
+    margin-left: 40px;
+}
+
+#components {
+    margin-top: 5%;
+    width: 100%;
+    height: 300px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.component {
+    margin-left: 40px;
+    width: 80%;
+    height: 50px;
+    font-weight: 800;
+    border-radius: 6px;
+    align-items: center;
+    display: flex;
+}
+
+.component img {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.component span.text-component {
+    width: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.component span.score {
+    margin-left: 25%;
+    margin-right: 10px;
+    width: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number {
+    color: #3d4159;
+    margin-right: 5px;
+}
+
+.number-max {
+    color: #c2c3d3;
+}
+
+#reaction {
+    margin-top: 20px;
+    background-color: #fff6f5;
+    color: #ef8083;
+}
+
+#memory {
+    background-color: #fffbf2;
+    color: #f3c15f;
+}
+
+#verbal {
+    background-color: #f2fafa;
+    color: #71cebb;
+}
+
+#visual {
+    background-color: #f3f3fd;
+    color: #555bab;
+}
+
+#button-summary {
+    width: 80%;
+    height: 50px;
+    background-color: #303b59;
+    color: white;
+    margin-top: 5%;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+#button-summary:hover {
+    cursor: pointer;
+    background: linear-gradient(to top, #312ce8, #4734f0, #6743ff);
+}
+
+@media (max-width: 700px){
+    div#main-block {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    div#results {
+        border-radius: 0px 0px 40px 40px;
+        width: 100%;
+        height: 400px;
+        padding-bottom: 15px;
+    }
+
+    #your-result {
+        margin-top: 20px;
+    }
+
+    div#circle {
+        margin-top: 20px;
+        height: 152px;
+        width: 152px;
+    }
+
+    div#title-results {
+        margin-top: 30px;
+        font-size: 1.8rem;
+    }
+
+    div#text {
+        margin-top: 10px;
+    }
+
+    span#score-total {
+        font-size: 3rem;
+    }
+
+    div#summary {
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 30px;
+    }
+
+    div#title-summary {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    div#components {
+        margin-top: 20px;
+    }
+
+    div.component {
+        width: 85%;
+        margin-right: 20px;
+        margin-left: 30px;
+        justify-content: space-evenly;
+    }
+
+    .component span.score {
+        margin-left: 5%;
+    }
+
+    div#button-summary {
+        width: 85%;
+        margin-left: 30px;
+    }
+}
